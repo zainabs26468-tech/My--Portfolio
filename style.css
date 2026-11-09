@@ -1,0 +1,290 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    color: #222;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKCrB_doe-52vFMn184ZHyLpi5Ww2RMmyX-mtAlYy0w&s=10");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #3157d5;
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #3157d5;
+}
+
+/* Home */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 10%;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #3157d5;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home h1 span,
+.heading span {
+    color: #3157d5;
+}
+
+.home h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.home-image img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3157d5;
+    color: white;
+    padding: 13px 28px;
+    margin-top: 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #203da5;
+}
+
+/* Common Sections */
+section {
+    padding: 80px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* About */
+.about {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.9;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 35px 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+}
+
+.skill-box h3 {
+    color: #3157d5;
+    margin-bottom: 15px;
+}
+
+.skill-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Projects */
+.projects {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+}
+
+.project-box h3 {
+    color: #3157d5;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3157d5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-btn:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.contact p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 6%;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+    .home-image img {
+        width: 220px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
+
